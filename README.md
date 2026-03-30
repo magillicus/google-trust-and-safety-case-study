@@ -34,7 +34,7 @@ This project is designed to answer questions such as:
 ## Dataset
 This project uses a synthetic dataset designed to simulate AI interaction risk signals in a Trust & Safety environment.
 
-Planned tables include:
+Tables include:
 
 - `users`  
   User-level attributes such as account age, region, and prior enforcement history
