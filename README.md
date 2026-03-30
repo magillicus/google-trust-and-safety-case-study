@@ -78,14 +78,13 @@ tableau/
 presentation/
 ```
 
-## Planned Deliverables
-This project includes:
+## Deliverables
 
-- a synthetic Trust & Safety dataset
-- SQL scripts for table creation, metric development, and analysis
-- supporting summary tables for dashboard input
-- a Tableau dashboard highlighting risk trends and operational insights
-- a short executive presentation summarizing findings and recommendations
+- Synthetic Trust & Safety dataset simulating AI misuse scenarios
+- SQL scripts for data exploration, metric development, and analysis
+- Excel-based summary tables used for visualization
+- Tableau dashboard for monitoring AI misuse risk and operational performance
+- Executive presentation outlining key insights and strategic recommendations
 
 ## Key Insights
 
