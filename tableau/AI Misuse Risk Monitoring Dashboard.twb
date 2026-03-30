@@ -1,1 +1,1795 @@
+<?xml version='1.0' encoding='utf-8' ?>
 
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <HideSortControls />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='abuse_over_time (ai_misuse_dashboard_data)' inline='true' name='federated.0i14rru11vqu1a1836aro0as2wtk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ai_misuse_dashboard_data' name='excel-direct.1evv1h91sq44g01elcatr0dn8oqm'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/excel/ai_misuse_dashboard_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1evv1h91sq44g01elcatr0dn8oqm' name='abuse_over_time' table='[abuse_over_time$]' type='table'>
+          <columns gridOrigin='A1:D91:no:A1:D91:0' header='yes' outcome='6'>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='total_prompts' ordinal='1' />
+            <column datatype='integer' name='flagged_prompts' ordinal='2' />
+            <column datatype='real' name='abuse_rate' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[abuse_over_time]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D91:no:A1:D91:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[abuse_over_time]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_prompts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_prompts]</local-name>
+            <parent-name>[abuse_over_time]</parent-name>
+            <remote-alias>total_prompts</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flagged_prompts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flagged_prompts]</local-name>
+            <parent-name>[abuse_over_time]</parent-name>
+            <remote-alias>flagged_prompts</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abuse_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[abuse_rate]</local-name>
+            <parent-name>[abuse_over_time]</parent-name>
+            <remote-alias>abuse_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='abuse_over_time' datatype='table' name='[__tableau_internal_object_id__].[abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD]' role='measure' type='quantitative' />
+      <column caption='Abuse Rate' datatype='real' default-format='p0.0%' name='[abuse_rate]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Flagged Prompts' datatype='integer' name='[flagged_prompts]' role='measure' type='quantitative' />
+      <column caption='Total Prompts' datatype='integer' name='[total_prompts]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='abuse_over_time' id='abuse!over!time_F7C58A6CB4E8475A919C5EF6F27117CD'>
+            <properties context=''>
+              <relation connection='excel-direct.1evv1h91sq44g01elcatr0dn8oqm' name='abuse_over_time' table='[abuse_over_time$]' type='table'>
+                <columns gridOrigin='A1:D91:no:A1:D91:0' header='yes' outcome='6'>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='total_prompts' ordinal='1' />
+                  <column datatype='integer' name='flagged_prompts' ordinal='2' />
+                  <column datatype='real' name='abuse_rate' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='violation_types (ai_misuse_dashboard_data)' inline='true' name='federated.1rio2l20z4ty581bcr1hr0pfjuws' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ai_misuse_dashboard_data' name='excel-direct.05cqqrq00vt71916mayod168alp2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/excel/ai_misuse_dashboard_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.05cqqrq00vt71916mayod168alp2' name='violation_types' table='[violation_types$]' type='table'>
+          <columns gridOrigin='A1:B9:no:A1:B9:0' header='yes' outcome='6'>
+            <column datatype='string' name='violation_type' ordinal='0' />
+            <column datatype='integer' name='occurrences' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[violation_types]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B9:no:A1:B9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>violation_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[violation_type]</local-name>
+            <parent-name>[violation_types]</parent-name>
+            <remote-alias>violation_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[violation!types_B3ECE08C8CEF4DFDA36534F2489519FB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occurrences</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occurrences]</local-name>
+            <parent-name>[violation_types]</parent-name>
+            <remote-alias>occurrences</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[violation!types_B3ECE08C8CEF4DFDA36534F2489519FB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='violation_types' datatype='table' name='[__tableau_internal_object_id__].[violation!types_B3ECE08C8CEF4DFDA36534F2489519FB]' role='measure' type='quantitative' />
+      <column caption='Occurrences' datatype='integer' name='[occurrences]' role='measure' type='quantitative' />
+      <column caption='Violation Type' datatype='string' name='[violation_type]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;harmful_instructions&quot;' value='Harmful Instructions' />
+          <alias key='&quot;malware_or_abuse_enablement&quot;' value='Malware/Abuse Enablement' />
+          <alias key='&quot;other_policy_violation&quot;' value='Other' />
+          <alias key='&quot;phishing_or_impersonation&quot;' value='Phishing/Impersonation' />
+          <alias key='&quot;policy_bypass_attempt&quot;' value='Policy Bypass Attempt' />
+          <alias key='&quot;sensitive_data_extraction&quot;' value='Sensitive Data Extraction' />
+          <alias key='&quot;spam_or_scam&quot;' value='Spam or Scam' />
+          <alias key='&quot;synthetic_identity_abuse&quot;' value='Synthetic Identity Abuse' />
+        </aliases>
+      </column>
+      <column-instance column='[violation_type]' derivation='None' name='[none:violation_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:violation_type:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;other_policy_violation&quot;</bucket>
+            </map>
+            <map to='#c11a3b'>
+              <bucket>&quot;policy_bypass_attempt&quot;</bucket>
+            </map>
+            <map to='#d3293d'>
+              <bucket>&quot;phishing_or_impersonation&quot;</bucket>
+            </map>
+            <map to='#e13b42'>
+              <bucket>&quot;harmful_instructions&quot;</bucket>
+            </map>
+            <map to='#f05c4d'>
+              <bucket>&quot;spam_or_scam&quot;</bucket>
+            </map>
+            <map to='#f77b66'>
+              <bucket>&quot;malware_or_abuse_enablement&quot;</bucket>
+            </map>
+            <map to='#fca290'>
+              <bucket>&quot;synthetic_identity_abuse&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;sensitive_data_extraction&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='violation_types' id='violation!types_B3ECE08C8CEF4DFDA36534F2489519FB'>
+            <properties context=''>
+              <relation connection='excel-direct.05cqqrq00vt71916mayod168alp2' name='violation_types' table='[violation_types$]' type='table'>
+                <columns gridOrigin='A1:B9:no:A1:B9:0' header='yes' outcome='6'>
+                  <column datatype='string' name='violation_type' ordinal='0' />
+                  <column datatype='integer' name='occurrences' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='kpi_summary (ai_misuse_dashboard_data)' inline='true' name='federated.1kmw2kg0mgjt5q1au30kx0loiitg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ai_misuse_dashboard_data' name='excel-direct.17sa2o11bjfrif14g0zvg1yfbh86'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/excel/ai_misuse_dashboard_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.17sa2o11bjfrif14g0zvg1yfbh86' name='kpi_summary' table='[kpi_summary$]' type='table'>
+          <columns gridOrigin='A1:D2:no:A1:D2:0' header='yes' outcome='6'>
+            <column datatype='integer' name='total_prompts' ordinal='0' />
+            <column datatype='integer' name='flagged_prompts' ordinal='1' />
+            <column datatype='real' name='abuse_rate' ordinal='2' />
+            <column datatype='real' name='avg_hours_to_detection' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[kpi_summary]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D2:no:A1:D2:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_prompts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_prompts]</local-name>
+            <parent-name>[kpi_summary]</parent-name>
+            <remote-alias>total_prompts</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flagged_prompts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[flagged_prompts]</local-name>
+            <parent-name>[kpi_summary]</parent-name>
+            <remote-alias>flagged_prompts</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abuse_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[abuse_rate]</local-name>
+            <parent-name>[kpi_summary]</parent-name>
+            <remote-alias>abuse_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_hours_to_detection</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_hours_to_detection]</local-name>
+            <parent-name>[kpi_summary]</parent-name>
+            <remote-alias>avg_hours_to_detection</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='kpi_summary' datatype='table' name='[__tableau_internal_object_id__].[kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C]' role='measure' type='quantitative' />
+      <column caption='Abuse Rate' datatype='real' name='[abuse_rate]' role='measure' type='quantitative' />
+      <column caption='Avg Hours To Detection' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[avg_hours_to_detection]' role='measure' type='quantitative' />
+      <column caption='Flagged Prompts' datatype='integer' name='[flagged_prompts]' role='measure' type='quantitative' />
+      <column caption='Total Prompts' datatype='integer' name='[total_prompts]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='kpi_summary' id='kpi!summary_62B5179EBF4C4864A3496B4ADA04AB4C'>
+            <properties context=''>
+              <relation connection='excel-direct.17sa2o11bjfrif14g0zvg1yfbh86' name='kpi_summary' table='[kpi_summary$]' type='table'>
+                <columns gridOrigin='A1:D2:no:A1:D2:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='total_prompts' ordinal='0' />
+                  <column datatype='integer' name='flagged_prompts' ordinal='1' />
+                  <column datatype='real' name='abuse_rate' ordinal='2' />
+                  <column datatype='real' name='avg_hours_to_detection' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='repeat_offenders (ai_misuse_dashboard_data)' inline='true' name='federated.050ocfd0hok2wi1b7osp905dfrom' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ai_misuse_dashboard_data' name='excel-direct.123hfq51pd49d410bqsof0v5d6js'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/excel/ai_misuse_dashboard_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.123hfq51pd49d410bqsof0v5d6js' name='repeat_offenders' table='[repeat_offenders$]' type='table'>
+          <columns gridOrigin='A1:B3:no:A1:B3:0' header='yes' outcome='6'>
+            <column datatype='string' name='offender_type' ordinal='0' />
+            <column datatype='integer' name='user_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[repeat_offenders]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B3:no:A1:B3:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offender_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[offender_type]</local-name>
+            <parent-name>[repeat_offenders]</parent-name>
+            <remote-alias>offender_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[repeat!offenders_697B9A58241A4197AD65B26AF2425A2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_count]</local-name>
+            <parent-name>[repeat_offenders]</parent-name>
+            <remote-alias>user_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[repeat!offenders_697B9A58241A4197AD65B26AF2425A2F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='repeat_offenders' datatype='table' name='[__tableau_internal_object_id__].[repeat!offenders_697B9A58241A4197AD65B26AF2425A2F]' role='measure' type='quantitative' />
+      <column caption='Offender Type' datatype='string' name='[offender_type]' role='dimension' type='nominal' />
+      <column caption='User Count' datatype='integer' name='[user_count]' role='measure' type='quantitative' />
+      <column-instance column='[offender_type]' derivation='None' name='[none:offender_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:offender_type:nk]' type='palette'>
+            <map to='#a4a9ab'>
+              <bucket>&quot;Repeat Offender&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;Single Offender&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='repeat_offenders' id='repeat!offenders_697B9A58241A4197AD65B26AF2425A2F'>
+            <properties context=''>
+              <relation connection='excel-direct.123hfq51pd49d410bqsof0v5d6js' name='repeat_offenders' table='[repeat_offenders$]' type='table'>
+                <columns gridOrigin='A1:B3:no:A1:B3:0' header='yes' outcome='6'>
+                  <column datatype='string' name='offender_type' ordinal='0' />
+                  <column datatype='integer' name='user_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='detection_lag_distribution (ai_misuse_dashboard_data)' inline='true' name='federated.0aqayr00xer62f1dlkepc1xc9tzc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ai_misuse_dashboard_data' name='excel-direct.11ioh0o1db8dp21f3tmjl1j6v3ce'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/excel/ai_misuse_dashboard_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.11ioh0o1db8dp21f3tmjl1j6v3ce' name='detection_lag_distribution' table='[detection_lag_distribution$]' type='table'>
+          <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+            <column datatype='string' name='detection_bucket' ordinal='0' />
+            <column datatype='integer' name='case_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[detection_lag_distribution]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B6:no:A1:B6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_bucket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[detection_bucket]</local-name>
+            <parent-name>[detection_lag_distribution]</parent-name>
+            <remote-alias>detection_bucket</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[detection!lag!distribution_4817627612174D1986F1F63C4EBCCAFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[case_count]</local-name>
+            <parent-name>[detection_lag_distribution]</parent-name>
+            <remote-alias>case_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[detection!lag!distribution_4817627612174D1986F1F63C4EBCCAFC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='detection_lag_distribution' datatype='table' name='[__tableau_internal_object_id__].[detection!lag!distribution_4817627612174D1986F1F63C4EBCCAFC]' role='measure' type='quantitative' />
+      <column caption='Case Count' datatype='integer' name='[case_count]' role='measure' type='quantitative' />
+      <column caption='Detection Bucket' datatype='string' name='[detection_bucket]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='detection_lag_distribution' id='detection!lag!distribution_4817627612174D1986F1F63C4EBCCAFC'>
+            <properties context=''>
+              <relation connection='excel-direct.11ioh0o1db8dp21f3tmjl1j6v3ce' name='detection_lag_distribution' table='[detection_lag_distribution$]' type='table'>
+                <columns gridOrigin='A1:B6:no:A1:B6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='detection_bucket' ordinal='0' />
+                  <column datatype='integer' name='case_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Abuse Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Abuse Rate Over Time (Q4, 2025)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='abuse_over_time (ai_misuse_dashboard_data)' name='federated.0i14rru11vqu1a1836aro0as2wtk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i14rru11vqu1a1836aro0as2wtk'>
+            <column caption='Abuse Rate' datatype='real' default-format='p0.0%' name='[abuse_rate]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[abuse_rate]' derivation='Sum' name='[sum:abuse_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <hide-sort-controls />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[none:date:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[sum:abuse_rate:qk]' scope='rows' value='Rate' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='auto' />
+            <format attr='color' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[none:date:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[none:date:qk]' value='bold' />
+            <format attr='color' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[sum:abuse_rate:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[sum:abuse_rate:qk]' value='bold' />
+            <format attr='text-format' field='[federated.0i14rru11vqu1a1836aro0as2wtk].[sum:abuse_rate:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff314c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i14rru11vqu1a1836aro0as2wtk].[sum:abuse_rate:qk]</rows>
+        <cols>[federated.0i14rru11vqu1a1836aro0as2wtk].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{43C187D9-E585-41B5-BF37-D63D9CDC4CBA}' />
+    </worksheet>
+    <worksheet name='Abuse Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='abuse_over_time (ai_misuse_dashboard_data)' name='federated.0i14rru11vqu1a1836aro0as2wtk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i14rru11vqu1a1836aro0as2wtk'>
+            <column caption='Abuse Rate' datatype='real' default-format='p0.0%' name='[abuse_rate]' role='measure' type='quantitative' />
+            <column-instance column='[abuse_rate]' derivation='Avg' name='[avg:abuse_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0i14rru11vqu1a1836aro0as2wtk].[avg:abuse_rate:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.0i14rru11vqu1a1836aro0as2wtk].[avg:abuse_rate:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EAB91347-3D1B-4BE1-BDD1-F84CAA711C1B}' />
+    </worksheet>
+    <worksheet name='Average Hours to Detection'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary (ai_misuse_dashboard_data)' name='federated.1kmw2kg0mgjt5q1au30kx0loiitg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kmw2kg0mgjt5q1au30kx0loiitg'>
+            <column-instance column='[avg_hours_to_detection]' derivation='Avg' name='[avg:avg_hours_to_detection:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Hours To Detection' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[avg_hours_to_detection]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-weight' scope='rows' value='normal' />
+            <format attr='color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kmw2kg0mgjt5q1au30kx0loiitg].[avg:avg_hours_to_detection:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'><![CDATA[<[federated.1kmw2kg0mgjt5q1au30kx0loiitg].[avg:avg_hours_to_detection:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{93A80CEA-00F6-47A0-AE69-DE94749306DE}' />
+    </worksheet>
+    <worksheet name='Detection Lag Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Detection Time Distribution (Hours)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='detection_lag_distribution (ai_misuse_dashboard_data)' name='federated.0aqayr00xer62f1dlkepc1xc9tzc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aqayr00xer62f1dlkepc1xc9tzc'>
+            <column caption='Case Count' datatype='integer' name='[case_count]' role='measure' type='quantitative' />
+            <column caption='Detection Bucket' datatype='string' name='[detection_bucket]' role='dimension' type='nominal' />
+            <column-instance column='[detection_bucket]' derivation='None' name='[none:detection_bucket:nk]' pivot='key' type='nominal' />
+            <column-instance column='[case_count]' derivation='Sum' name='[sum:case_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[none:detection_bucket:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;1 hour&quot;</bucket>
+              <bucket>&quot;1–3 hours&quot;</bucket>
+              <bucket>&quot;3–6 hours&quot;</bucket>
+              <bucket>&quot;6–12 hours&quot;</bucket>
+              <bucket>&quot;12+ hours&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[sum:case_count:qk]' scope='cols' value='Number of Cases' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[none:detection_bucket:nk]' value='bold' />
+            <format attr='color' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[none:detection_bucket:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[sum:case_count:qk]' value='bold' />
+            <format attr='color' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[sum:case_count:qk]' value='#000000' />
+            <format attr='text-format' field='[federated.0aqayr00xer62f1dlkepc1xc9tzc].[sum:case_count:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#000061' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0aqayr00xer62f1dlkepc1xc9tzc].[none:detection_bucket:nk]</rows>
+        <cols>[federated.0aqayr00xer62f1dlkepc1xc9tzc].[sum:case_count:qk]</cols>
+      </table>
+      <simple-id uuid='{A2B2C963-58EC-4E43-8AA9-7800E9E29E24}' />
+    </worksheet>
+    <worksheet name='Repeat Offenders'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Single vs &lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='repeat_offenders (ai_misuse_dashboard_data)' name='federated.050ocfd0hok2wi1b7osp905dfrom' />
+          </datasources>
+          <datasource-dependencies datasource='federated.050ocfd0hok2wi1b7osp905dfrom'>
+            <column-instance column='[offender_type]' derivation='None' name='[none:offender_type:nk]' pivot='key' type='nominal' />
+            <column caption='Offender Type' datatype='string' name='[offender_type]' role='dimension' type='nominal' />
+            <column-instance column='[user_count]' derivation='Sum' name='[sum:user_count:qk]' pivot='key' type='quantitative' />
+            <column caption='User Count' datatype='integer' name='[user_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <hide-sort-controls />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]' field-type='quantitative' major-origin='0' major-spacing='100.0' scope='cols' type='space' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='title' class='0' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]' scope='cols' value='Number of Users' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]' value='bold' />
+            <format attr='color' field='[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]</rows>
+        <cols>[federated.050ocfd0hok2wi1b7osp905dfrom].[sum:user_count:qk]</cols>
+      </table>
+      <simple-id uuid='{7D42DA64-A04C-4ED8-9419-FAC3CD89F9DB}' />
+    </worksheet>
+    <worksheet name='Total Prompts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='kpi_summary (ai_misuse_dashboard_data)' name='federated.1kmw2kg0mgjt5q1au30kx0loiitg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kmw2kg0mgjt5q1au30kx0loiitg'>
+            <column-instance column='[total_prompts]' derivation='Sum' name='[sum:total_prompts:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Prompts' datatype='integer' name='[total_prompts]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1kmw2kg0mgjt5q1au30kx0loiitg].[sum:total_prompts:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='30'>&lt;</run>
+                <run bold='true' fontsize='30'>[federated.1kmw2kg0mgjt5q1au30kx0loiitg].[sum:total_prompts:qk]</run>
+                <run bold='true' fontsize='30'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{22DAD32E-E6E5-45DB-B477-CE1C52D6156D}' />
+    </worksheet>
+    <worksheet name='Violation Types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='violation_types (ai_misuse_dashboard_data)' name='federated.1rio2l20z4ty581bcr1hr0pfjuws' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rio2l20z4ty581bcr1hr0pfjuws'>
+            <column-instance column='[violation_type]' derivation='None' name='[none:violation_type:nk]' pivot='key' type='nominal' />
+            <column caption='Occurrences' datatype='integer' name='[occurrences]' role='measure' type='quantitative' />
+            <column-instance column='[occurrences]' derivation='Sum' name='[sum:occurrences:qk]' pivot='key' type='quantitative' />
+            <column caption='Violation Type' datatype='string' name='[violation_type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;harmful_instructions&quot;' value='Harmful Instructions' />
+                <alias key='&quot;malware_or_abuse_enablement&quot;' value='Malware/Abuse Enablement' />
+                <alias key='&quot;other_policy_violation&quot;' value='Other' />
+                <alias key='&quot;phishing_or_impersonation&quot;' value='Phishing/Impersonation' />
+                <alias key='&quot;policy_bypass_attempt&quot;' value='Policy Bypass Attempt' />
+                <alias key='&quot;sensitive_data_extraction&quot;' value='Sensitive Data Extraction' />
+                <alias key='&quot;spam_or_scam&quot;' value='Spam or Scam' />
+                <alias key='&quot;synthetic_identity_abuse&quot;' value='Synthetic Identity Abuse' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]' shelf='rows' />
+          </shelf-sorts>
+          <hide-sort-controls />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]' field-type='quantitative' major-origin='0' major-spacing='100' scope='cols' type='space' />
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='title' class='0' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]' scope='cols' value='Number of Violations' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' value='256' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' value='bold' />
+            <format attr='color' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' value='#000000' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='color' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]</rows>
+        <cols>[federated.1rio2l20z4ty581bcr1hr0pfjuws].[sum:occurrences:qk]</cols>
+      </table>
+      <simple-id uuid='{5399CA6A-5ED5-4585-B6AA-C0EEC791C03C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='AI Misuse Risk Monitoring Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98152' id='19' param='horz' type-v2='layout-flow' w='99002' x='499' y='924'>
+            <zone h='98152' id='17' type-v2='layout-basic' w='99002' x='499' y='924'>
+              <zone h='84018' id='11' param='horz' type-v2='layout-flow' w='99002' x='499' y='10037'>
+                <zone h='84018' id='9' type-v2='layout-basic' w='99002' x='499' y='10037'>
+                  <zone h='13617' id='3' name='Abuse Rate' w='21197' x='13084' y='10037'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13617' id='5' name='Average Hours to Detection' w='32357' x='34281' y='10037'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13617' id='6' name='Total Prompts' w='19755' x='66638' y='10037'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='35925' id='7' name='Abuse Over Time' w='49503' x='49998' y='23654'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='35925' id='8' name='Violation Types' w='49499' x='499' y='23654'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34476' id='16' name='Repeat Offenders' w='49485' x='499' y='59579'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='34476' id='21' name='Detection Lag Distribution' w='49517' x='49984' y='59579'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13617' id='22' param='vert' type-v2='layout-flow' w='12585' x='499' y='10037' />
+                  <zone h='13617' id='23' param='vert' type-v2='layout-flow' w='13108' x='86393' y='10037' />
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='9113' id='14' type-v2='text' w='99002' x='499' y='924'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>AI Misuse Risk Monitoring Dashboard</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5021' id='15' is-scaled='1' param='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/images/Doodle logo.png' type-v2='bitmap' w='99002' x='499' y='94055'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='34' param='vert' type-v2='layout-flow' w='99002' x='499' y='924'>
+                <zone forceUpdate='true' h='9113' id='14' type-v2='text' w='99002' x='499' y='924'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>AI Misuse Risk Monitoring Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='13617' id='3' is-fixed='true' name='Abuse Rate' w='21197' x='13084' y='10037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='13617' id='5' is-fixed='true' name='Average Hours to Detection' w='32357' x='34281' y='10037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='101' h='13617' id='6' is-fixed='true' name='Total Prompts' w='19755' x='66638' y='10037'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35925' id='8' is-fixed='true' name='Violation Types' w='49499' x='499' y='23654'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35925' id='7' is-fixed='true' name='Abuse Over Time' w='49503' x='49998' y='23654'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='34476' id='16' is-fixed='true' name='Repeat Offenders' w='49485' x='499' y='59579'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='34476' id='21' is-fixed='true' name='Detection Lag Distribution' w='49517' x='49984' y='59579'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='33' h='5021' id='15' is-fixed='true' is-scaled='1' param='C:/Users/marcu/OneDrive/Documents/Data Analyst Projects/google-trust-and-safety-case-study/images/Doodle logo.png' type-v2='bitmap' w='99002' x='499' y='94055'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{6143AF9C-E902-4FAC-85BD-1160876DF608}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='dashboard' maximized='true' name='AI Misuse Risk Monitoring Dashboard'>
+      <viewpoints>
+        <viewpoint name='Abuse Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Abuse Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Hours to Detection'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Detection Lag Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Repeat Offenders'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Prompts'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Violation Types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{876E3970-ADE4-42A9-875D-25603BD14E1E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Abuse Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0i14rru11vqu1a1836aro0as2wtk].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA4BA574-1469-409A-9555-D2C999FC6CB7}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Abuse Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D697DAED-0969-42E0-98C8-86A2A5F8FEDB}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Hours to Detection'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A82173A4-5716-4B91-A614-1F00BE0B052D}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Detection Lag Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aqayr00xer62f1dlkepc1xc9tzc].[none:detection_bucket:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9BDD70E5-440D-44CE-A1DF-370452447DF1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Repeat Offenders'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.050ocfd0hok2wi1b7osp905dfrom].[none:offender_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{13DD007C-AF00-4236-8989-1CAA13833562}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Total Prompts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DB69F114-5977-423F-B50C-6A520C1D369C}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Violation Types'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rio2l20z4ty581bcr1hr0pfjuws].[none:violation_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6379C30F-1BF0-4F50-9326-7DD6115A9A89}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='AI Misuse Risk Monitoring Dashboard' width='192'>
+      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
+      ckX8B/+xTQeqV058AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
