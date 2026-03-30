@@ -48,30 +48,6 @@ Tables include:
 - `risk_signals`  
   Derived or collected risk indicators such as anomaly scores, keyword flags, prior user flags, and composite risk factors
 
-## Methodology
-The project follows this workflow:
-
-1. **Role Deconstruction**  
-   Analyze the job description to identify the core analytical, strategic, and cross-functional requirements of the role.
-
-2. **Project Design**  
-   Build a focused Trust & Safety scenario aligned with the responsibilities described in the posting.
-
-3. **Data Preparation**  
-   Generate and structure a synthetic dataset, load it into SQLite, and validate table relationships and distributions.
-
-4. **Metrics Development**  
-   Create a SQL-based metrics layer to define core safety and risk indicators.
-
-5. **Analysis**  
-   Use SQL to evaluate misuse rates, segment user behavior, analyze operational patterns, and identify emerging threats.
-
-6. **Visualization**  
-   Prepare summary outputs and build a Tableau dashboard for decision-ready monitoring.
-
-7. **Executive Communication**  
-   Translate the analysis into concise business insights and strategic recommendations for cross-functional stakeholders.
-
 ## Core Metrics
 The analysis is centered around a set of Trust & Safety-oriented KPIs, including:
 
