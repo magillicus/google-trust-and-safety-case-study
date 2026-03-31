@@ -15,7 +15,7 @@ Generative AI systems create new opportunities for users, but they also introduc
 This case study simulates how an analyst might evaluate AI misuse patterns, measure operational risk, identify emerging threat behaviors, and recommend scalable mitigation strategies for a large technology platform.
 
 ## Business Objective
-The objective of this project is to design an analytics framework that helps a Trust & Safety team:
+The objective of this project is to design an analytics framework that helps a Trust and Safety team:
 
 - detect potentially harmful or policy-violating AI interactions
 - identify high-risk user behavior patterns
@@ -26,7 +26,7 @@ The objective of this project is to design an analytics framework that helps a T
 ## Scenario
 A large technology company has launched a generative AI feature. Early signals suggest possible misuse related to spam, harmful content generation, adversarial prompting, and attempts to bypass policy safeguards.
 
-As the analyst supporting Trust & Safety, the goal is to assess the evolving threat landscape and propose a proactive monitoring approach that helps the organization move from reactive enforcement to forward-looking risk mitigation.
+As the analyst supporting Trust and Safety, the goal is to assess the evolving threat landscape and propose a proactive monitoring approach that helps the organization move from reactive enforcement to forward-looking risk mitigation.
 
 ## Key Business Questions
 This project is designed to answer questions such as:
@@ -38,7 +38,7 @@ This project is designed to answer questions such as:
 5. What signals could help identify emerging misuse patterns before they scale?
 
 ## Dataset
-This project uses a synthetic dataset designed to simulate AI interaction risk signals in a Trust & Safety environment.
+This project uses a generated dataset designed to simulate AI interaction risk signals in a Trust and Safety environment.
 
 Tables include:
 
@@ -55,7 +55,7 @@ Tables include:
   Derived or collected risk indicators such as anomaly scores, keyword flags, prior user flags, and composite risk factors
 
 ## Core Metrics
-The analysis is centered around a set of Trust & Safety-oriented KPIs, including:
+The analysis is centered around a set of Trust and Safety-oriented KPIs, including:
 
 - **Abuse Rate** — share of AI interactions flagged as policy-violating
 - **High-Risk Prompt Rate** — share of prompts containing suspicious intent or elevated risk signals
@@ -92,7 +92,7 @@ presentation/
 
 ## Deliverables
 
-- Synthetic Trust & Safety dataset simulating AI misuse scenarios
+- Synthetic Trust and Safety dataset simulating AI misuse scenarios
 - SQL scripts for data exploration, metric development, and analysis
 - Excel-based summary tables used for visualization
 - Tableau dashboard for monitoring AI misuse risk and operational performance
