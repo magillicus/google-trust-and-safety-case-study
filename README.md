@@ -10,7 +10,7 @@ To demonstrate how I would contribute to Google’s Trust and Safety team, I bui
 [Doodle Detecting and Mitigating AI Misuse Risk Presentation.pdf](https://github.com/user-attachments/files/26363526/Doodle.Detecting.and.Mitigating.AI.Misuse.Risk.Presentation.pdf)
 
 ## Project Overview
-Generative AI systems create new opportunities for users, but they also introduce evolving misuse risks that can scale quickly if not identified early. In Trust & Safety environments, analysts must move beyond reactive reporting and help define proactive detection frameworks that support product, engineering, policy, and legal decision-making.
+Generative AI systems create new opportunities for users, but they also introduce evolving misuse risks that can scale quickly if not identified early. In Trust and Safety environments, analysts must move beyond reactive reporting and help define proactive detection frameworks that support product, engineering, policy, and legal decision-making.
 
 This case study simulates how an analyst might evaluate AI misuse patterns, measure operational risk, identify emerging threat behaviors, and recommend scalable mitigation strategies for a large technology platform.
 
