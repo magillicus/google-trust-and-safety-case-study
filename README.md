@@ -6,6 +6,9 @@ To demonstrate how I would contribute to Google’s Trust & Safety team, I built
 ## Dashboard Preview
 <img width="959" height="526" alt="AI Misuse Risk Monitoring Dashboard Screenshot" src="https://github.com/user-attachments/assets/b5d16bdb-6daf-4d1c-a4e6-44b8cd9aacaf" />
 
+## Executive Summary Presentation
+[Doodle Detecting and Mitigating AI Misuse Risk Presentation.pdf](https://github.com/user-attachments/files/26363526/Doodle.Detecting.and.Mitigating.AI.Misuse.Risk.Presentation.pdf)
+
 ## Project Overview
 Generative AI systems create new opportunities for users, but they also introduce evolving misuse risks that can scale quickly if not identified early. In Trust & Safety environments, analysts must move beyond reactive reporting and help define proactive detection frameworks that support product, engineering, policy, and legal decision-making.
 
