@@ -1,7 +1,7 @@
 # Detecting and Mitigating AI Misuse: A Proactive Risk Analytics Framework
 
 ## Why This Project
-To demonstrate how I would contribute to Google’s Trust & Safety team, I built a targeted analytics case study simulating how to detect and mitigate emerging AI misuse risks. This project focuses on proactive threat identification, risk scoring, scalable safety monitoring, and executive-level communication of analytical findings.
+To demonstrate how I would contribute to Google’s Trust and Safety team, I built a targeted analytics case study simulating how to detect and mitigate emerging AI misuse risks. This project focuses on proactive threat identification, risk scoring, scalable safety monitoring, and executive-level communication of analytical findings.
 
 ## Dashboard Preview
 <img width="959" height="526" alt="AI Misuse Risk Monitoring Dashboard Screenshot" src="https://github.com/user-attachments/assets/b5d16bdb-6daf-4d1c-a4e6-44b8cd9aacaf" />
