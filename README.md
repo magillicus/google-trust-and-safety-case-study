@@ -130,7 +130,7 @@ Based on the final analysis, recommendations will likely focus on areas such as:
 ## Why This Project Matters
 This case study is intended to demonstrate more than technical reporting ability. It reflects how analytics can support strategic decision-making in environments where risk is dynamic, ambiguity is high, and proactive thinking is essential.
 
-For roles in Trust & Safety, effective analysis is not only about measuring what has already happened. It is also about helping teams anticipate what could happen next and building systems that are resilient before issues scale.
+For roles in Trust and Safety, Gemini and Labs, effective analysis is likely about more than what has already happened. Helping teams anticipate what could happen next and building systems that are resilient before issues scale is presumptively another priority.
 
 This targeted portfolio project was created to demonstrate role-aligned analytical thinking for the Trust & Safety Engineering Analyst role.
 
