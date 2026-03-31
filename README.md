@@ -74,14 +74,20 @@ The analysis is centered around a set of Trust & Safety-oriented KPIs, including
 ## Project Structure
 ```
 data/
-    
+    ai_misuse_synthetic.sqlite
 sql/
-
+    01_data_exploration_gts.sql.md
+    02_metrics_layer_gts.sql.md
+    03_risk_analysis_gts.sql.md
+    04_tableau_tables_gts.sql.md
 excel/
-    
+    ai_misuse_dashboard_data.xlsx
 tableau/
-    
+    AI Misuse Risk Monitoring Dashboard.twb
 presentation/
+    Doodle Detecting and Mitigating AI Misuse Risk Presentation.pdf
+    Doodle Detecting and Mitigating AI Misuse Risk Presentation.pptx
+
 ```
 
 ## Deliverables
